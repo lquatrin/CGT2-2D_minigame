@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Asteroid.hpp" />
+    <ClInclude Include="src\CanvasAssistance.h" />
+    <ClInclude Include="src\Canvas\CanvasDraw.h" />
+    <ClInclude Include="src\Effects\AsteroidExplosion.hpp" />
+    <ClInclude Include="src\GObject.hpp" />
+    <ClInclude Include="src\Intersections.hpp" />
+    <ClInclude Include="src\IO\Input.hpp" />
+    <ClInclude Include="src\Matriz\Matriz.hpp" />
+    <ClInclude Include="src\Matriz\Matriz_Functions.hpp" />
+    <ClInclude Include="src\Menu.hpp" />
+    <ClInclude Include="src\Shoots\BasicShoot.hpp" />
+    <ClInclude Include="src\Shoots\CircleShoot.hpp" />
+    <ClInclude Include="src\Shoots\EnemyShoot.hpp" />
+    <ClInclude Include="src\Shoots\ExplosionShoot.hpp" />
+    <ClInclude Include="src\Shoots\GuidedShoot.hpp" />
+    <ClInclude Include="src\Shoots\Shoot.hpp" />
+    <ClInclude Include="src\Top10Screen.hpp" />
+    <ClInclude Include="src\Vehicles\Enemy.hpp" />
+    <ClInclude Include="src\Vehicles\Nave.hpp" />
+    <ClInclude Include="src\Vehicles\naveInstances.hpp" />
+    <ClInclude Include="src\Vehicles\Vehicle.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Asteroid.cpp" />
+    <ClCompile Include="src\CanvasAssistance.cpp" />
+    <ClCompile Include="src\Canvas\CanvasDraw.cpp" />
+    <ClCompile Include="src\Effects\AsteroidExplosion.cpp" />
+    <ClCompile Include="src\GObject.cpp" />
+    <ClCompile Include="src\IO\Input.cpp" />
+    <ClCompile Include="src\Menu.cpp" />
+    <ClCompile Include="src\SCV_main.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Top10Screen.cpp" />
+    <ClCompile Include="src\Vehicles\Enemy.cpp" />
+    <ClCompile Include="src\Vehicles\Nave.cpp" />
+    <ClCompile Include="src\Vehicles\Vehicle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top.bin" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6DB76FD5-7D53-4E96-B1A1-0ABCF9555090}</ProjectGuid>
+    <RootNamespace>scv_examples</RootNamespace>
+    <ProjectName>CG_T2</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)\src;$(ProjectDir)\src\Labels;$(ProjectDir)\src\Canvas;$(ProjectDir)\src\Shoots;$(ProjectDir)\src\Vehicles;$(ProjectDir)\src\Matriz;$(ProjectDir)\src\Effects;$(ProjectDir)\src\IO;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)\src;$(ProjectDir)\src\Labels;$(ProjectDir)\src\Canvas;$(ProjectDir)\src\Shoots;$(ProjectDir)\src\Vehicles;$(ProjectDir)\src\Matriz;$(ProjectDir)\src\Effects;$(ProjectDir)\src\IO;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../include</AdditionalIncludeDirectories>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../lib/win32;../lib/win32/scv</AdditionalLibraryDirectories>
+      <AdditionalDependencies>scv-debug.lib;freeglut.lib;FreeImage.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../lib/win32;../lib/win32/scv</AdditionalLibraryDirectories>
+      <AdditionalDependencies>scv-release.lib;freeglut.lib;FreeImage.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

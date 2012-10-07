@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Canvas">
+      <UniqueIdentifier>{737ff2c3-3cc9-41b9-8d9f-7a1516b0048e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Canvas">
+      <UniqueIdentifier>{73884bea-42fd-467b-a4b0-da977b290d61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Shoots">
+      <UniqueIdentifier>{89be9e95-fb0a-46cf-810a-c90e53f7f853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Vehicles">
+      <UniqueIdentifier>{3a217b00-281b-4368-a7f9-6e882c1a846f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Effects">
+      <UniqueIdentifier>{c89725ce-6b28-4a02-8e5a-c680a2875055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Screens">
+      <UniqueIdentifier>{bdf4a809-1a9f-46c5-b6d8-7c6306fef43e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects">
+      <UniqueIdentifier>{d79970d0-6a18-40ad-b076-22fcbeec1393}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Maths">
+      <UniqueIdentifier>{6c96f2ff-faa5-4736-9a1f-6be538f1a930}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IO">
+      <UniqueIdentifier>{b700bbd7-2c89-4291-844a-f65737d35421}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Effects">
+      <UniqueIdentifier>{13683dd7-f970-4bd8-a0ad-04185a5df4b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO">
+      <UniqueIdentifier>{fbb45d0d-5368-4492-87fb-9bc7087bc4c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects">
+      <UniqueIdentifier>{ac10ab71-e115-4442-b815-292e01dd54e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Screens">
+      <UniqueIdentifier>{2de2f493-3783-4d03-80b3-b3e343e9a7d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Vehicles">
+      <UniqueIdentifier>{fd367948-45a7-432e-8a2b-6de865e01ba7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Canvas\CanvasDraw.h">
+      <Filter>Header Files\Canvas</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shoots\BasicShoot.hpp">
+      <Filter>Header Files\Shoots</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shoots\GuidedShoot.hpp">
+      <Filter>Header Files\Shoots</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shoots\Shoot.hpp">
+      <Filter>Header Files\Shoots</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vehicles\Enemy.hpp">
+      <Filter>Header Files\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vehicles\Nave.hpp">
+      <Filter>Header Files\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vehicles\naveInstances.hpp">
+      <Filter>Header Files\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vehicles\Vehicle.hpp">
+      <Filter>Header Files\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shoots\EnemyShoot.hpp">
+      <Filter>Header Files\Shoots</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Matriz\Matriz.hpp">
+      <Filter>Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Matriz\Matriz_Functions.hpp">
+      <Filter>Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Effects\AsteroidExplosion.hpp">
+      <Filter>Header Files\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Menu.hpp">
+      <Filter>Header Files\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CanvasAssistance.h">
+      <Filter>Header Files\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Asteroid.hpp">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GObject.hpp">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Intersections.hpp">
+      <Filter>Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Top10Screen.hpp">
+      <Filter>Header Files\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IO\Input.hpp">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shoots\CircleShoot.hpp">
+      <Filter>Header Files\Shoots</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shoots\ExplosionShoot.hpp">
+      <Filter>Header Files\Shoots</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SCV_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Canvas\CanvasDraw.cpp">
+      <Filter>Source Files\Canvas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Effects\AsteroidExplosion.cpp">
+      <Filter>Source Files\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\Input.cpp">
+      <Filter>Source Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GObject.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Asteroid.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CanvasAssistance.cpp">
+      <Filter>Source Files\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Menu.cpp">
+      <Filter>Source Files\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Top10Screen.cpp">
+      <Filter>Source Files\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vehicles\Enemy.cpp">
+      <Filter>Source Files\Vehicles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vehicles\Nave.cpp">
+      <Filter>Source Files\Vehicles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vehicles\Vehicle.cpp">
+      <Filter>Source Files\Vehicles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
